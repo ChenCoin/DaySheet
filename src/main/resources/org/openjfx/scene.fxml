@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="root" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" stylesheets="@skin.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.FXMLController">
+    <children>
+      <HBox alignment="CENTER_RIGHT">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+         </children>
+         <VBox.margin>
+            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+              <Button fx:id="dataBtn" minWidth="120.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="选择数据文件">
+               <HBox.margin>
+                  <Insets right="24.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Label fx:id="dataLabel" text="未选择文件" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children>
+         <VBox.margin>
+            <Insets left="64.0" right="64.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+              <Button fx:id="peopleBtn" minWidth="120.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="选择人员文件">
+               <HBox.margin>
+                  <Insets right="24.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Label fx:id="peopleLabel" text="未选择文件" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children>
+         <VBox.margin>
+            <Insets left="64.0" right="64.0" top="32.0" />
+         </VBox.margin>
+      </HBox>
+      <Button fx:id="mainBtn" disable="true" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="处理数据">
+         <VBox.margin>
+            <Insets top="32.0" />
+         </VBox.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="tipLabel">
+         <VBox.margin>
+            <Insets top="32.0" />
+         </VBox.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+    </children>
+</VBox>
