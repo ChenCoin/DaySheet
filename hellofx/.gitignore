@@ -1,0 +1,10 @@
+.gradle
+.idea
+/build
+/captures
+*.iml
+local.properties
+/daily/Daily/nbproject/private/
+/daily/nbproject/private/
+/daily/build/
+/daily/dist/
