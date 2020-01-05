@@ -184,6 +184,7 @@ public class FXMLDocumentController implements Initializable {
 			}
 		});
 		System.err.println("count " + data.toString());
+		new Store().save();
 	}
 
 }
