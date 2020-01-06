@@ -12,13 +12,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
 
-/**
- *
- * @author Coin
- */
 public class Store {
 
 	public void save() {
+		
 		// TODO code application logic here
 		try {
 			// load the driver
