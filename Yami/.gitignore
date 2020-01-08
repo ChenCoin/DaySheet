@@ -1,6 +1,7 @@
 .gradle
 .idea
 /build
+/out
 /captures
 *.iml
 local.properties
